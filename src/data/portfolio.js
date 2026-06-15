@@ -21,7 +21,7 @@ export const portfolio = [
   {
     name: '塔圖聚落 Tattoo Settlement',
     enName: 'Tattoo Settlement',
-    link: 'https://easonlinvscode.github.io/tattoo-settlement/artists',
+    link: 'https://easonlinvscode.github.io/tattoo-settlement/',
     image: tattooSettlementImg,
     accent: 'Tattoo',
     summary:
