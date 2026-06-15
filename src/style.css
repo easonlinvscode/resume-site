@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  /* 暖色系色彩 */
+  --color-cream: #fff7ed;
+  --color-cream-deep: #ffedd5;
+  --color-orange: #ea580c;
+  --color-orange-light: #fb923c;
+  --color-coffee: #292524;
+  --color-warmgray: #78716c;
+
+  /* 字體 */
+  --font-sans: "Noto Sans TC", "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Inter", "Noto Sans TC", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-coffee);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 減少動態偏好 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 滾動進場動畫共用 class */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero 進場動畫（依序錯位淡入） */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.7s ease-out forwards;
+}
+
+/* 時間軸線條動畫使用的 scale 工具 */
+.scale-y-0 {
+  transform: scaleY(0);
+}
+.scale-y-100 {
+  transform: scaleY(1);
+}
+
+/* 自訂滾動條（暖色調） */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-orange-light);
+  border-radius: 9999px;
+}
