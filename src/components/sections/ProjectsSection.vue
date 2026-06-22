@@ -9,8 +9,7 @@ import ProjectCard from '../ui/ProjectCard.vue'
     <div class="mx-auto max-w-5xl px-6">
       <SectionTitle
         eyebrow="Projects"
-        title="專案亮點"
-        description="從實際工作經歷中萃取的代表性專案。"
+        title="專案"
       />
 
       <div class="grid gap-5 sm:grid-cols-2">

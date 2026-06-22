@@ -10,7 +10,7 @@ import TimelineItem from '../ui/TimelineItem.vue'
       <SectionTitle
         eyebrow="Experience"
         title="工作經歷"
-        description="近 10 年前端相關工作經歷，由近到遠呈現。"
+        description="前端相關工作經歷"
       />
 
       <div>

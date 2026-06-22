@@ -10,7 +10,7 @@ import PortfolioCard from '../ui/PortfolioCard.vue'
       <SectionTitle
         eyebrow="Portfolio"
         title="個人作品集"
-        description="業餘時間獨立開發的 side project，涵蓋表單系統、媒合平台與後台管理系統，皆已部署上線。"
+        description="side project，涵蓋表單系統、媒合平台與後台管理系統。"
       />
 
       <div class="flex flex-col gap-6 sm:gap-8">
